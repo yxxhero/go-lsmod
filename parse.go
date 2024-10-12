@@ -84,7 +84,7 @@ func parseInfo(fields []string) (info ModInfo, err error) {
 	}
 
 	if len(fields) == maxFieldsPerLine {
-		info.Tained, err = parseTained(fields[6])
+		info.Taineds, err = parseTained(fields[6])
 		if err != nil {
 			return info, errors.Wrap(err, "unknown tained (field 7)")
 		}
