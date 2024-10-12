@@ -2,7 +2,7 @@ package lsmod
 
 // IsLoaded just check if the specified module loaded
 func IsLoaded(name string) (bool, error) {
-	mods, err := LsMod()
+	mods, err := LsMod("")
 	if err != nil {
 		return false, err
 	}

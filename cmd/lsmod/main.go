@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	mods, err := lsmod.LsMod()
+	mods, err := lsmod.LsMod("")
 	if err != nil {
 		panic(err)
 	}
