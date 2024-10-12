@@ -3,7 +3,7 @@ package lsmod_test
 import (
 	"testing"
 
-	"github.com/Djarvur/go-lsmod"
+	"github.com/yxxhero/go-lsmod"
 )
 
 func TestLsMod(t *testing.T) {
