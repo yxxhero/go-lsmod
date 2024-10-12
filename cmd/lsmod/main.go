@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	lsmod "github.com/Djarvur/go-lsmod"
+	lsmod "github.com/yxxhero/go-lsmod"
 )
 
 func main() {
