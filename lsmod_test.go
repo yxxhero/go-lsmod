@@ -7,7 +7,7 @@ import (
 )
 
 func TestLsMod(t *testing.T) {
-	if _, err := lsmod.LsMod(); err != nil {
+	if _, err := lsmod.LsMod(""); err != nil {
 		t.Error(err)
 	}
 }

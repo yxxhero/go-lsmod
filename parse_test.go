@@ -8,7 +8,7 @@ import (
 )
 
 var testData = map[string]ModInfo{
-	"mod1": ModInfo{
+	"mod1": {
 		Depends: []string{
 			"mod2",
 			"mod3",
@@ -18,7 +18,7 @@ var testData = map[string]ModInfo{
 		Offset:    1,
 		State:     StateLive,
 	},
-	"mod2": ModInfo{
+	"mod2": {
 		Depends: []string{
 			"mod3",
 		},
@@ -27,19 +27,19 @@ var testData = map[string]ModInfo{
 		Offset:    2,
 		State:     StateLive,
 	},
-	"mod3": ModInfo{
+	"mod3": {
 		Mem:       3,
 		Instances: 1,
 		Offset:    3,
 		Tained:    TainedF,
 		State:     StateLive,
 	},
-	"mod4": ModInfo{
+	"mod4": {
 		Mem:    4,
 		Offset: 4,
 		State:  StateLive,
 	},
-	"mod5": ModInfo{
+	"mod5": {
 		Mem:       5,
 		Instances: 1,
 		Offset:    5,
